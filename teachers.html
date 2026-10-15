@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শিক্ষকবৃন্দের তালিকা - সিলেট পলিটেকনিক ইনস্টিটিউট</title>
+    <link rel="icon" href="favicon.png" type="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #008B8B;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #006666;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .teacher-card {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .teacher-card i.avatar {
+            font-size: 60px;
+            color: #005f5f;
+            margin-bottom: 10px;
+        }
+        .teacher-card h3 {
+            margin: 5px 0;
+            color: #005f5f;
+        }
+        .teacher-card p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background-color: #ffffff;
+            color: #005f5f;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background-color: #ffeb3b;
+            color: #000;
+            text-color: #6f6b6b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-chalkboard-teacher"></i> শিক্ষকবৃন্দের তালিকা</h1>
+        <p style="text-align: center;">সিলেট পলিটেকনিক ইনস্টিটিউটের শ্রদ্ধেয় শিক্ষকবৃন্দ।</p>
+
+        <div class="teachers-grid">
+            
+            <!-- Teacher 1 -->
+            <div class="teacher-card">
+                <i class="fas fa-user-circle avatar"></i>
+                <h3>ইঞ্জিনিয়ার মোঃ আব্দুর রহিম</h3>
+                <p><strong>পদবী:</strong> চিফ ইনস্ট্রাক্টর ও বিভাগীয় প্রধান</p>
+                <p><strong>বিভাগ:</strong> কম্পিউটার প্রযুক্তি</p>
+                <p><i class="fas fa-envelope"></i> rahim@sylhetpoly.gov.bd</p>
+            </div>
+            <!-- Teacher 2 -->
+            <div class="teacher-card">
+                <i class="fas fa-user-circle avatar"></i>
+                <h3>ইঞ্জিনিয়ার সাইফ আহমেদ</h3>
+                <p><strong>পদবী:</strong> ইনস্ট্রাক্টর</p>
+                <p><strong>বিভাগ:</strong> সিভিল প্রযুক্তি</p>
+                <p><i class="fas fa-envelope"></i> saif@sylhetpoly.gov.bd</p>
+            </div>
+
+            <!-- Teacher 3 -->
+            <div class="teacher-card">
+                <i class="fas fa-user-circle avatar"></i>
+                <h3>ইঞ্জিনিয়ার তানজিলা আক্তার</h3>
+                <p><strong>পদবী:</strong> ইনস্ট্রাক্টর</p>
+                <p><strong>বিভাগ:</strong> ইলেকট্রিক্যাল প্রযুক্তি</p>
+                <p><i class="fas fa-envelope"></i> tanjila@sylhetpoly.gov.bd</p>
+            </div>
+
+            <!-- Teacher 4 -->
+            <div class="teacher-card">
+                <i class="fas fa-user-circle avatar"></i>
+                <h3>ইঞ্জিনিয়ার মাহমুদুল হাসান</h3>
+                <p><strong>পদবী:</strong> সহকারী ইনস্ট্রাক্টর</p>
+                <p><strong>বিভাগ:</strong> মেকানিক্যাল প্রযুক্তি</p>
+                <p><i class="fas fa-envelope"></i> mahmud@sylhetpoly.gov.bd</p>
+            </div>
+
+        </div>
+
+        <!-- Main page a phire jabar button -->
+        <a href="sgpt.html" class="back-btn"><i class="fas fa-arrow-left"></i> মূল পেজে ফিরে যান</a>
+    </div>
+
+</body>
+</html>

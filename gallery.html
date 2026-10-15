@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফটো গ্যালারি - সিলেট পলিটেকনিক ইনস্টিটিউট</title>
+    <link rel="icon" href="favicon.png" type="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #008B8B;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #006666;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .gallery-card {
+            background-color: #ffffff;
+            color: #333333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-card p {
+            padding: 12px;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            color: #005f5f;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background-color: #ffffff;
+            color: #005f5f;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background-color: #ffeb3b;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-images"></i> ফটো গ্যালারি</h1>
+        <p style="text-align: center;">সিলেট পলিটেকনিক ইনস্টিটিউটের ক্যাম্পাস ও বিভিন্ন অনুষ্ঠানের কিছু মুহূর্ত।</p>
+
+        <div class="gallery-grid">
+            
+            <!-- Photo 1 -->
+            <div class="gallery-card">
+                <img src="img.jpeg" alt="ইনস্টিটিউট ক্যাম্পাস">
+                <p>ইনস্টিটিউট প্রধান ভবন</p>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="gallery-card">
+                <img src="computer-lab.jpg" alt="কম্পিউটার ল্যাব">
+                <p>আধুনিক কম্পিউটার ল্যাব</p>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="gallery-card">
+                <img src="mechanical-lab.jpg" alt="ওয়ার্কশপ">
+                <p>মেকানিক্যাল ওয়ার্কশপ</p>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="gallery-card">
+                <img src="campus.jpeg" alt="শিক্ষার্থী ও ক্যাম্পাস">
+                <p>ক্যাম্পাস প্রাঙ্গণ</p>
+            </div>
+
+        </div>
+
+        <!-- Main page back button -->
+        <a href="sgpt.html" class="back-btn"><i class="fas fa-arrow-left"></i> মূল পেজে ফিরে যান</a>
+    </div>
+
+</body>
+</html>
